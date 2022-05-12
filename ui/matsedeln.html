@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+             background-color: white !important;
+        }
+        main{
+            margin-top: 33%;
+            padding-top: 0;
+        }
+    </style>
+    <title>THG Matsedeln</title>
+
+</head>
+<body onload="getMatsedeln()">
+    <main>
+        <div id="header">
+            Matsedeln
+                <div id="content">
+                    <div id="top">
+                        <h1 id="CampusK"> Campus Konradsberg </h1>
+                        <img src=https://lh3.googleusercontent.com/KDrbAeeH3jbilEOLbxj5BQ1xEF8UL4GykQ6WZpOhuRys4a_lXYTRAg4c2oyVr_ZlUyKsSrfyrJCZHAwULHWB alt="" id="logga">
+                        <h3 id="vecka"></h3>
+                    </div>
+                    
+                    <div id="skolmaten"></div>
+                    <div id="buttons"> 
+                        <button id="föregående"> &lt&lt Föregående vecka</button>
+                        <button id="nästa">  Nästa vecka >> </button>
+                    </div>
+                    
+                </div> 
+        </div>
+    </main>
+    <aside>
+        <div id="aside-arrow">❱</div>
+        <!-- 
+                    Ilias kod 
+                        <div id="theme">
+                            <i class="fa fa-moon-o fa-fw" id="moon"></i>
+                            <button id="buttonMode"> Dark Mode </button>
+                            <i class="fa fa-sun-o fa-fw" id="sun"></i>
+                        </div>
+                    Ilias kod
+                -->
+                    
+            <div id="links">
+                <a  href="startsida.html"><div>Startsida</div></a>                  
+                <a  href="karta.html"><div>Karta</div></a>
+                <a  href="schema.html"><div>Scheman</div></a>
+                <a  id="link-active" href="matsedeln.html"><div>Matsedel</div></a>
+            </div>
+    </aside>
+    
+    <script src="matsedelnScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2022",
+    "lib": [ "ESNext" ],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "CommonJS",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "preserveConstEnums": true
+  },
+  "exclude": [
+    "node_modules",
+    "package-lock.json"
+  ],
+  "include": [
+    "routes" , 
+    "lib", 
+    "payload", 
+    "types", 
+    "db", 
+    "enums", 
+    "app.ts", 
+    "index.d.ts"
+  ]
+}

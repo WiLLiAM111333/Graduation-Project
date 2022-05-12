@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>THG Karta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mapSystem/mapStyle.css">
+</head>
+<body>
+    <main>
+        <header>
+            THG Karta
+        </header>
+
+
+        <!-- Map html code-->
+        <div id="map-options">
+            Välj våning:
+            <div class="map-level-active" id="map-level-1" onclick="changeMapLevel('1')">1</div>
+            <div id="map-level-2" onclick="changeMapLevel('2')">2</div>   
+            <div id="map-level-3" onclick="changeMapLevel('3')">3</div>   
+            <div id="map-level-4" onclick="changeMapLevel('4')">4</div>   
+        </div>
+
+        <div id="map-container">
+            <img id="map" src="mapSystem/mapLevel1.png">
+        </div>
+        <!-- LEGACY
+        <div id="map-controls">
+            <div id="map-zoom-menu">
+                <div class="map-zoom" onclick="zoom('in')"> + </div>
+                <div class="map-zoom" onclick="zoom('out')"> - </div>
+                <div class="map-zoom" id="zoom-counter">100%</div>
+                <div class="map-zoom" onclick="mapReset()">Reset</div>
+            </div>
+    
+            <div id="map-keypad" >
+                <div></div> <div class="map-control" style="text-align: center;" onclick="moveMap('up')">↑</div> <div></div>
+                <div class="map-control" onclick="moveMap('left')">←</div> <div></div> <div class="map-control" style="text-align: right;" onclick="moveMap('right')">→</div>
+                <div></div> <div class="map-control" style="text-align: center;" onclick="moveMap('down')">↓</div> <div></div>
+            </div>
+        </div>
+        -->
+        <!-- Map html code-->
+
+    </main>
+
+    <aside>
+        <div id="aside-arrow">❱</div>
+        <!-- Theme switch LEGACY
+        <div id="theme-container">
+            <div id="theme">
+                <i class="fa fa-moon-o fa-fw" id="moon"></i>
+                <button id="buttonMode"> Dark Mode </button>
+                <i class="fa fa-sun-o fa-fw" id="sun"></i>
+            </div>
+        </div>
+        -->
+        
+        <div id="links">
+            <a  href="startsida.html"><div>Startsida</div></a>                  
+            <a  id="link-active" href="karta.html"><div>Karta</div></a>
+            <a  href="schema.html"><div>Scheman</div></a>
+            <a  href="matsedeln.html"><div>Matsedel</div></a>
+        </div>
+    </aside>
+    
+    <script src="mapSystem/mapScript.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

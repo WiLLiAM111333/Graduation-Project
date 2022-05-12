@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>THG Schema</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="teacherDropdownMenu/styleschedule.css">
+    <!-- Keyboard <link rel="stylesheet" href="virtualKeyboard/virtualKeyboard.css">-->
+    
+</head>
+<body>
+    <main onclick="toggleVK('off')">
+        <header>
+            Lärares scheman
+        </header>
+
+        <!--Teachers drop down-->
+        <div id="dropdown-teachers">
+            <div onclick="toggleTeacherDropdownContent()"><span id="selected-teacher">Välj lärare</span><span style="float: right">▼</span></div>
+            <div id="dropdown-teachers-content">
+                <input id="dropdown-search" type="text" placeholder="Sök..." onkeyup="searchInput(value)" onclick="toggleVK('on')">
+                <p style="border-bottom: grey solid 1px; font-size: 32px">Alfabetisk ordning</p>
+                <div id="teacher-names-container">
+
+                </div>
+            </div>
+        </div>
+        <img id="selected-teacher-schedule" src="" width="800px" height="auto">
+            <!--Teachers drop down-->
+
+    </main>
+    <aside>
+        <div id="aside-arrow">❱</div>
+        <!-- Theme switch LEGACY
+        <div id="theme-container">
+            <div id="theme">
+                <i class="fa fa-moon-o fa-fw" id="moon"></i>
+                <button id="buttonMode"> Dark Mode </button>
+                <i class="fa fa-sun-o fa-fw" id="sun"></i>
+            </div>
+        </div>
+        -->
+                    
+        <div id="links">
+            <a  href="startsida.html"><div>Startsida</div></a>                  
+            <a  href="karta.html"><div>Karta</div></a>
+            <a  id="link-active" href="schema.html"><div>Scheman</div></a>
+            <a  href="matsedeln.html"><div>Matsedel</div></a>
+        </div>
+    </aside>
+    
+    <!-- Virtual keyboard
+    <div id="virtual-keyboard">
+        <ul id="keyboard">
+            <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+            <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+            <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+            <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+            <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+            <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+            <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+            <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+            <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+            <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+            <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+            <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+            <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+            <li class="delete lastitem">delete</li>
+            <li class="tab">tab</li>
+            <li class="letter">q</li>
+            <li class="letter">w</li>
+            <li class="letter">e</li>
+            <li class="letter">r</li>
+            <li class="letter">t</li>
+            <li class="letter">y</li>
+            <li class="letter">u</li>
+            <li class="letter">i</li>
+            <li class="letter">o</li>
+            <li class="letter">p</li>
+            <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+            <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+            <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+            <li class="capslock">caps lock</li>
+            <li class="letter">a</li>
+            <li class="letter">s</li>
+            <li class="letter">d</li>
+            <li class="letter">f</li>
+            <li class="letter">g</li>
+            <li class="letter">h</li>
+            <li class="letter">j</li>
+            <li class="letter">k</li>
+            <li class="letter">l</li>
+            <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+            <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+            <li class="return lastitem">return</li>
+            <li class="left-shift">shift</li>
+            <li class="letter">z</li>
+            <li class="letter">x</li>
+            <li class="letter">c</li>
+            <li class="letter">v</li>
+            <li class="letter">b</li>
+            <li class="letter">n</li>
+            <li class="letter">m</li>
+            <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+            <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+            <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+            <li class="right-shift lastitem">shift</li>
+            <li class="space lastitem">&nbsp;</li>
+        </ul>
+    </div>
+    -->
+
+    <script src="script.js"></script>
+    <script src="jquery3.2.1.min.js"></script>
+    <script src="teacherDropdownMenu/scriptschedule.js"></script>
+    <!-- Keyboard <script src="virtualKeyboard/virtualKeyboard.js"></script>-->
+</body>
+</html>

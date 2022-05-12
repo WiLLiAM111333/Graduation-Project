@@ -1,0 +1,9 @@
+local
+temp
+server/node_modules
+server/package-lock.json
+server/.env
+server/dist
+server/temp.js
+server/assets/schedules
+server/logs

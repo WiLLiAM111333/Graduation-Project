@@ -1,0 +1,2 @@
+editorconfig: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+dotenv: https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv

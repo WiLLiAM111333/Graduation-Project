@@ -1,0 +1,277 @@
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: red;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#moon{ position: absolute !important; }
+
+body{
+    transition: 0.7s;
+    background-color: #2070f0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+/* LEGACY
+    body.active{
+        background-color: black;
+        color: white;
+    }
+    #buttonMode{
+        font-size: 20px;
+        cursor: pointer;
+        transition: ease-in-out;
+        background-color:white ;
+        color: black;
+        border-radius: 40px;
+        padding: 1%;
+        margin-left: -16.6%;
+        position: absolute;
+    }
+    #buttonMode.active{
+        background-color: rgb(78, 78, 78);
+        color: white;
+        margin-left: -8.5%;
+    }
+    aside.active{
+       background-color:#464646 ;
+       transition: 0.7s;
+    }
+    #buttonMode:hover{
+        transition-duration: 1s ;
+        position: absolute;
+    }
+
+    #theme-container{
+        height: 4vh;
+    }
+
+    #theme{
+        background-color: gray;
+        width: 100%;
+        border-radius: 40px;
+        height: 48px;
+        float: right;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .fa{
+        color: white;
+        position: fixed;
+        margin-left: -0 .5%;
+        margin-top: 1%;
+        margin-left: -1%;
+        font-size: 25px;
+    }
+    .fa-sun-o{
+        margin-left: -70%;
+    }
+    #sun{
+        font-size: 21px;
+        color: black;
+        margin-left: -80%;
+        margin-top: 6%;
+        position: revert;
+    }
+    #all{
+     margin: 0;
+     display: flex;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     user-select: none;
+     overflow-x: hidden !important;
+     overflow-y: hidden !important;
+}
+*/
+
+ header{
+    font-size: 64px;
+    margin: 0 auto 4vh auto;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+ aside{
+     background-color: white;
+     border-right: 8vw solid green;
+     outline: 0.2vw solid black;
+     height: 100vh;
+     width: 25vw !important;
+     transition: 0.4s;
+     margin-left: -26vw;
+     position: fixed;
+     font-size: 32px;
+     z-index: 2;
+}
+
+aside:hover {
+    margin-left: 0;
+}
+
+#aside-arrow{
+    margin-left: 26vw;
+    margin-top: 44vh;
+    font-size: 8vh;
+    position: absolute;
+    color: white;
+    border: none;
+}
+
+ aside div{
+     text-align: center;
+     border-bottom: 1px solid grey;
+
+}
+
+aside #links{
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 1fr;
+    height: 100vh;
+}
+
+aside #links a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-top: 4px solid #08080829;
+    padding: 20% 0;
+    transition: 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+aside #links a div{
+    justify-content: center;
+    transform: rotate(-90deg);
+    border: none;
+    font-size: 64px;
+}
+
+#links a:hover{
+    background-color: #f0f8ff91;
+}
+
+#link-active{
+    background-color: #2070f0 !important;
+    color: white !important;
+    font-weight: bold;
+}
+
+main{
+    /* den högra linjen om asiden är 4vw. Därför är width 96wh och margin-left 4wv så att det centreras*/
+    margin-left: 8vw;
+    width: 92vw;
+    padding-top: 4%;
+    position: absolute;
+}
+
+#home-image{
+    display: block;
+    margin: 4vh auto;
+    box-shadow: 5px 10px 8px black;
+}
+#skolmaten{
+    font-size: 20px;
+    text-align: center;
+}
+#CampusK{
+    font-size: 40px;
+    float: left;
+    margin: 0;
+    margin-left: 5px;
+}
+#vecka{
+    float: left;
+    font-size: 32px;
+    margin-top: 60px;
+    margin-left: -400px;
+    font-weight: 600;
+}
+#content{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-right-color: #464545;
+    border-radius: 9px;
+    background-color: white;
+}
+#logga{
+    width: 111px;
+    float: right;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+#top{
+    background-color: #2070f0;
+    height: 120px;
+    color: white;
+    border-radius: 8px;
+}
+table{
+    width: 100%;
+    border-bottom: 4px solid #00db10;
+    height: 150px;
+}
+th{
+    width: 15%;
+    float: left;
+    margin-top: 1.5%;
+    margin-bottom: 9%;
+    margin-left: -11px;
+    font-size: 30px;
+    text-align: left;
+    border-left: 9px solid #2070f0;
+    font-family: cursive;
+}
+td{
+    width: 80%;
+    font-size: 30px;
+    text-align: left;
+    float: left;
+    font-family: sans-serif;
+    padding-top: 22px;
+}
+#föregående{
+float: left;
+margin-left: 2px;
+margin-top: -10px;
+font-size: 30px;
+padding: 15px;
+background-color:#2070f0 ;
+border-color: #4e91fd;
+color: white;
+border-top-left-radius: 15px;
+border-bottom-left-radius: 15px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+width: 49%;
+}
+#nästa{
+float: right;
+margin-top: -10px;
+font-size: 30px;
+padding: 15px;
+background-color:#2070f0 ;
+border-color: #6199f4;
+color: white;
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+border-top-left-radius: 4px;
+border-bottom-left-radius: 4px;
+margin-right: 4px;
+width: 49%;
+}
+#buttons{
+    padding-top: 20px;
+    padding-bottom: 70px;
+    font-size: 30px;
+
+}
+#header{
+    font-size: 64px;
+    margin: 0 auto;
+    text-align: center;
+}

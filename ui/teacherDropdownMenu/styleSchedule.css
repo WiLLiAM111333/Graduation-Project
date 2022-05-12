@@ -1,0 +1,48 @@
+
+#dropdown-teachers {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    background-color:white;
+    border: 1px solid grey;
+    font-size: 48px;
+    width: 60vw;
+    padding: 20px 4px;
+}
+  
+#dropdown-teachers-content {
+    font-size: 48px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 12px 16px;
+    z-index: 1;
+    width: 90%;
+    margin-top: 18px;
+    margin-left: -5px;
+    border: grey solid;
+    border-width: 0 1px 1px 1px;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+#selected-teacher-schedule{
+    margin: 60px auto 0 auto;
+    position: relative;
+    display: none;
+    box-shadow: 5px 10px 8px black;
+    max-height: 80vh;
+    max-width: 90vw;
+}
+
+#selected-teacher{
+    max-width: 90%;
+}
+
+#dropdown-search{
+    height: 100px;
+    border-radius: 10px;
+    font-size: 48px;
+    width: 100%;
+    outline: none;
+}
